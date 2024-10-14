@@ -8,6 +8,22 @@ import 'semantic-ui-less/semantic.less';
 import Ccp from './components/ccp';
 import { autoSignIn } from '@aws-amplify/auth';
 
+// Amplify imports for base install
+import { Amplify } from "aws-amplify";
+import awsExports from "./aws-exports";
+Amplify.configure(awsExports);
+// 
+
+
+import { Auth } from 'aws-amplify';
+Auth.configure({
+    userPoolId: 'us-east-1_L0czn1Bff',
+    userPoolWebClientId: '2m3g8hbu0k82o3oh1b3gvdas38',
+    region: 'us-east-1'
+});
+
+
+
 // Component
 function App({ signOut, user }) {
   const [isConfigured, setIsConfigured] = useState(false);
@@ -24,6 +40,8 @@ function App({ signOut, user }) {
   const signedIn = async () => {
     await autoSignIn();
   };
+
+
 
   return (
     <div className="App">
