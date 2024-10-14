@@ -9,8 +9,8 @@ import Ccp from './components/ccp';
 import { autoSignIn } from '@aws-amplify/auth';
 
 // Amplify imports for base install
-import { Amplify } from "aws-amplify";
-import awsExports from "./aws-exports";
+// import { Amplify } from "aws-amplify";
+// import awsExports from "./aws-exports";
 Amplify.configure(awsExports);
 // 
 
