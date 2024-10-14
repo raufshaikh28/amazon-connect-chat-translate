@@ -16,7 +16,7 @@ Amplify.configure(awsExports);
 // 
 
 
-import { Auth } from 'aws-amplify';
+//import { Auth } from 'aws-amplify';
 Auth.configure({
     userPoolId: 'us-east-1_L0czn1Bff',
     userPoolWebClientId: '2m3g8hbu0k82o3oh1b3gvdas38',
