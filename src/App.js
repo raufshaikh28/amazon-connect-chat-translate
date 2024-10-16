@@ -17,10 +17,17 @@ function App({ signOut, user }) {
     //signedIn();
   }, []);
 
+
   const configureAuth = () => {
     Amplify.configure(awsconfig);
     setIsConfigured(true);
   };
+//import { Auth } from 'aws-amplify';
+Auth.configure({
+    userPoolId: 'uus-east-1_afz15oc0K',
+    userPoolWebClientId: '2o5f23osgsrh0d54uj40q6n0ei',
+    region: 'us-east-1'
+});
   //const signedIn = async () => {
     //await autoSignIn();
   //};
