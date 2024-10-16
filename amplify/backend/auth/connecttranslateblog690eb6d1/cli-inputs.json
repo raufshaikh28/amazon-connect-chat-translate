@@ -57,11 +57,11 @@
     "breakCircularDependency": false,
     "useEnabledMfas": false,
     "dependsOn": [],
-    "thirdPartyAuth": false,
+    "thirdPartyAuth": true,
     "userPoolGroups": true,
-    "adminQueries": false,
+    "adminQueries": true,
     "triggers": {},
-    "hostedUI": false,
+    "hostedUI": true,
     "authProviders": [],
     "parentStack": {
       "Ref": "AWS::StackId"
