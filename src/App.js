@@ -6,6 +6,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import 'semantic-ui-less/semantic.less';
 import Ccp from './components/ccp';
+import { Auth } from 'aws-amplify';
 //import { autoSignIn } from '@aws-amplify/auth';
 
 // Component
@@ -22,7 +23,7 @@ function App({ signOut, user }) {
     Amplify.configure(awsconfig);
     setIsConfigured(true);
   };
-//import { Auth } from 'aws-amplify';
+
 Auth.configure({
     userPoolId: 'uus-east-1_afz15oc0K',
     userPoolWebClientId: '2o5f23osgsrh0d54uj40q6n0ei',
