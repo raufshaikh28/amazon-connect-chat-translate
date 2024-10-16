@@ -1,5 +1,4 @@
 import { Amplify }  from '@aws-amplify/core';
-import { Auth } from 'aws-amplify';
 import { withAuthenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 import awsconfig from './aws-exports';
@@ -7,23 +6,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import 'semantic-ui-less/semantic.less';
 import Ccp from './components/ccp';
-import { autoSignIn } from '@aws-amplify/auth';
-
-// Amplify imports for base install
-// import { Amplify } from "aws-amplify";
-// import awsExports from "./aws-exports";
-Amplify.configure(awsExports);
-// 
-
-
-//import { Auth } from 'aws-amplify';
-Auth.configure({
-    userPoolId: 'us-east-1_L0czn1Bff',
-    userPoolWebClientId: '2m3g8hbu0k82o3oh1b3gvdas38',
-    region: 'us-east-1'
-});
-
-
+//import { autoSignIn } from '@aws-amplify/auth';
 
 // Component
 function App({ signOut, user }) {
@@ -31,18 +14,16 @@ function App({ signOut, user }) {
   
   useEffect(() => {
     configureAuth();
-    signedIn();
+    //signedIn();
   }, []);
 
   const configureAuth = () => {
     Amplify.configure(awsconfig);
     setIsConfigured(true);
   };
-  const signedIn = async () => {
-    await autoSignIn();
-  };
-
-
+  //const signedIn = async () => {
+    //await autoSignIn();
+  //};
 
   return (
     <div className="App">
