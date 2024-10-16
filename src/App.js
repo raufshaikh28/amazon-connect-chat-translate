@@ -27,8 +27,9 @@ function App({ signOut, user }) {
 Amplify.configure({
   Auth: {
     Cognito: {
-      userPoolClientId: '2o5f23osgsrh0d54uj40q6n0ei',
-      userPoolId: 'us-east-1_afz15oc0K',
+      Userpoolname:'connecttranslateblog690eb6d1_userpool_690eb6d1-main',
+      userPoolClientId:'5llua8vab4uqs6sc6f4jhl93f1',
+      userPoolId:'us-east-1_afz15oc0K',
     }
   }
 });
