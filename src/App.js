@@ -27,7 +27,8 @@ function App({ signOut, user }) {
 Amplify.configure({
   Auth: {
     Cognito: {
-      Userpoolname:'connecttranslateblog690eb6d1_userpool_690eb6d1-main',
+      userpoolname:'connecttranslateblog690eb6d1_userpool_690eb6d1-main',
+      identityPoolName:'connecttranslateblog690eb6d1_identitypool_690eb6d1',
       userPoolClientId:'5llua8vab4uqs6sc6f4jhl93f1',
       userPoolId:'us-east-1_afz15oc0K',
     }
