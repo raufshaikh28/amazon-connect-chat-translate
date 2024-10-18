@@ -4,7 +4,7 @@
     "identityPoolName": "connecttranslateblog690eb6d1_identitypool_690eb6d1",
     "allowUnauthenticatedIdentities": false,
     "resourceNameTruncated": "connec690eb6d1",
-    "userPoolName": "connecttranslateblog690eb6d1_userpool_690eb6d1",
+    "userPoolName": "connecttranslateblog690eb6d1_userpool_690eb6d1-main",
     "autoVerifiedAttributes": [
       "email"
     ],
