@@ -8,7 +8,16 @@ import 'semantic-ui-less/semantic.less';
 import Ccp from './components/ccp';
 
 //import { autoSignIn } from '@aws-amplify/auth';
-
+Amplify.configure({
+  Auth: {
+    Cognito: {
+      userpoolname:'connecttranslateblog690eb6d1_userpool_690eb6d1-main',
+      identityPoolName:'connecttranslateblog690eb6d1_identitypool_690eb6d1__main',
+      userPoolClientId:'2o5f23osgsrh0d54uj40q6n0ei',
+      userPoolId:'us-east-1_afz15oc0K',
+    }
+  }
+});
 // Component
 function App({ signOut, user }) {
   const [isConfigured, setIsConfigured] = useState(false);
