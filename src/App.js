@@ -13,7 +13,7 @@ Amplify.configure({
     Cognito: {
       userpoolname:'connecttranslateblog690eb6d1_userpool_690eb6d1-main',
       identityPoolName:'connecttranslateblog690eb6d1_identitypool_690eb6d1__main',
-      userPoolClientId:'2o5f23osgsrh0d54uj40q6n0ei',
+      userPoolClientId:'5k5reeq8hr9v637r7umogh70q',
       userPoolId:'us-east-1_afz15oc0K',
     }
   }
